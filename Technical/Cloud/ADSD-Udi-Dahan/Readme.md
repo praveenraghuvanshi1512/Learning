@@ -69,7 +69,65 @@
 
   <img src=".\assets\coupling.png" alt="Coupling" style="zoom:80%;" />
 
-- fdasf
+- Adding Resiliency by using Queue
+
+  <img src=".\assets\store-and-forward.png" alt="Store and Forward" style="zoom:80%;" />
+
+- Messages over methods
+
+  <img src=".\assets\standard- service-interfaces.png" alt="Standard Service Interfaces" style="zoom:80%;" />
+
+  <img src=".\assets\messages-over-methods.png" alt="Messages over methods" style="zoom:80%;" />
+
+- Message becomes DTO
+
+- Using message queuing system, there is no Data Loss.
+
+- No cross cutting concerns in WebAPI or message handlers
+
+- HTTP timeout is 30 seconds
+
+- Database timeout is 10 minutes
+
+  <img src=".\assets\database-down.png" alt="Database Down" style="zoom:80%;" />
+
+- NServiceBus has a retry logic inbuilt
+
+- In old RPC kind of systems, when bad things happens they are very susceptible for data loss
+
+- When choosing infrastructure, it has to be reliable and fast
+
+- RPC is very very fast but unsafe/unreliable
+
+- Messaging is safe and try to be as fast as possible
+
+- RPC is like a car without airbag which is fast but unsafe 
+
+- Messaging is like a car with airbag or safety measures, but slow compared to RPC
+
+  <img src=".\assets\messaging-server-crash.png" alt="Messaging in server crash" style="zoom:80%;" />
+
+- Message ID and header are very important in a queueing systems
+
+- Eventual Inconsistency
+
+- Transactions in Messaging systems such as RabbitMQ
+
+- Query before submit
+
+- Cache is dangerous and needs to be submitted
+
+- Async makes system cost effective, not the messaging system
+
+- Storage is cheap but processing is costly. If done synchronous, need more hardware/servers to handle the load. In this case, asynchronous messaging is helpful in reducing the cost
+
+- Versioning helps solve concurrency problems
+
+- 
+
+## Questions
+
+- On server failure, messages gets accumulated in the queue and once queue is back online, the messages are replayed in a single threaded manner, how can we make it multithreaded ? Also how to handle any failure due to this multithreading?
 
 ## References
 
@@ -93,8 +151,23 @@
 - RMI
 - Schema is for developer productivity and not for interoperability
 - Deadlocks, Livelocks, Race conditions
-- Srevice Agent Problem
+- Service Agent Problem
 - Content based Routing/Document based messaging : Avoid it
 - Header based Routing
+- Correlation Id
+- ETag
+- Difference between RabbitMQ and Azure service bus
+- Data Deduplication
+
+
+
+## Takeaway
+
+- Fallacies of distributed computing
+- Benefits of messaging over web service
+- Different type of coupling
+- Versioning of messages for out-of-order
+- Sagas
+- Concurrency
 - 
 

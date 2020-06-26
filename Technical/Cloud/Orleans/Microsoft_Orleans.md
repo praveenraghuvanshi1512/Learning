@@ -7,7 +7,14 @@
 - General
 - Healthcheck
   - [Orleans Health Checks using ASP.NET Core](https://www.youtube.com/watch?v=z3iq8iPWviE&list=PLThyvG1mlMzmrQk1p_0XjP3YF2Ji_hY64&index=4)
-  - 
+
+
+
+## Notes
+
+[Complete Microsoft Orleans .NET: From Zero to Hero](https://www.udemy.com/course/complete-orleans-net-from-zero-to-hero/)
+
+- 
 
 ## Questions
 
