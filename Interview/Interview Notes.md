@@ -72,4 +72,8 @@
 
     4. **Message Throttling:** Generally happens when there is an issue in processing a message by the server and client keeps on sending the messages. The messages gets accumulated in the messaging queue. It might be due to service unavailable or a bug in processing the message by the service
     
-    5. A tool to monitor the DLQ and send an email beyond a threshold.
+    5. Latency increases whenever there is a throttling.
+    
+    6. A tool to monitor the DLQ and send an email beyond a threshold.
+    
+    7. 
