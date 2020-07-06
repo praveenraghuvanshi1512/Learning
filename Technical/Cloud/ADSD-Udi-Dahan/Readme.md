@@ -341,7 +341,35 @@
 
 - Capability centric via services and policy centric via sagas.
 
-- 
+- Rewrites of big thing won't work.
+
+- Rewrite tax
+
+- Rather than going for a big bang rewrite, go with incremental rewrite such as converting a bus to a plane
+
+- Have the rewrite conversation for the budget
+
+- Develop feature by feature
+
+- Ensure business should never stop during this activity of refactoring
+
+- Need to communicate, sell your work and share your wins
+
+- Keep big ball of mud stable, don't do BIG rewrites.
+
+- Going maxim slow as possible and fast as necessary
+
+- Rewrite is attractive as its a blank slate
+
+- Multi-phase Transition plan a fun way
+
+  - First : Setup, Expose and publish events
+  - Second: Subscribe events and modify them in case a need arises
+  - Third: Scavenge big ball of mud and start creating boundaries 
+  - Fourth: Scavenge big ball of DB, reorg, Never stop evolving 
+  - Fifth and beyond: Never stop evolving
+
+- dfa
 
   
 
@@ -414,6 +442,8 @@
 - Entities are BAD and Entity relationship is worse
 - Finding the right boundaries
 - Focused on SOA and not on technology/framework/language
+- Udi Dahan, the simplicist
+- 
 
 ## References
 
